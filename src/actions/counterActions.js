@@ -11,3 +11,11 @@ export const decrement = () => {
     type: 'DECREMENT'
   }
 }
+
+
+export const incrementBySome = (num) => {
+  return {
+    type: 'INCREMENT_BY_SOME',
+    payload: num // so the action will send the payload to the reducer
+  }
+}
